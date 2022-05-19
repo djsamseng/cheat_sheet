@@ -19,6 +19,10 @@ or [Full Setup Instructions](https://www.sigmdel.ca/michel/ha/rpi/streaming_en.h
 ```
 
 ### Web Browser on Desktop
+```bash
+ping raspberrypi.local
+```
+
 - Raw Video [http://192.168.1.17:8085/?action=stream](http://192.168.1.17:8085/?action=stream])
 - Web Interface [http://192.168.1.17:8085/stream.html](http://192.168.1.17:8085/stream.html)
 
