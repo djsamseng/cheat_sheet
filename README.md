@@ -10,15 +10,15 @@ grep -Ril "text to find" /path/to/folder --include=\*.{cpp,h}
 
 ## RPI video stream
 ### On RPI
+[Setup Instructions](https://github.com/djsamseng/Grigio#raspberry-pi)
+or [Full Setup Instructions](https://www.sigmdel.ca/michel/ha/rpi/streaming_en.html)
+
 
 ```bash
-raspivid -t 0 -l -o tcp://0.0.0.0:3333
+/usr/local/bin/mjpg_streamer -i "/usr/local/lib/mjpg-streamer/input_uvc.so -n -f 10 -r 1280x720" -o "/usr/local/lib/mjpg-streamer/output_http.so -p 8085 -w /usr/local/share/mjpg-streamer/www"
 ```
 
-### VLC player on Desktop
+### Web Browser on Desktop
+- Raw Video [http://192.168.1.17:8085/?action=stream](http://192.168.1.17:8085/?action=stream])
+- Web Interface [http://192.168.1.17:8085/stream.html](http://192.168.1.17:8085/stream.html)
 
-```bash
-ping raspberrypi.local
-```
-
-File >> Open Network >> `tcp/h264://192.168.1.17:3333`
