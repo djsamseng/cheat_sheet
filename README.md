@@ -5,6 +5,12 @@
 ./grep_for_text.sh "text to find" /path/to/folder --include=\*.{cpp,h}
 grep -Ril "text to find" /path/to/folder --include=\*.{cpp,h}
 ```
+
+### Change Java versions
+```bash
+sudo update-alternatives --config java
+```
+
 #### Wifi signal strength
 ```bash
 sudo iwlist wlan0 scan | egrep "Cell|ESSID|Signal|Rates" | head -5
