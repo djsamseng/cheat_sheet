@@ -25,9 +25,18 @@ Options to pass into input_raspicam.so via
 raspistill
 ```
 
+### Python to turn off auto exposure after setup
+[Tutorial](https://learn.adafruit.com/raspberry-pi-hq-camera-low-light-long-exposure-photography?view=all)
+```python3
+from picamera import PiCamera
+import time
+time.sleep(30)
+camera.exposure_mode = 'off'
+```
+
+
 ### Webcam input
 ```bash
 /usr/local/bin/mjpg_streamer -i "/usr/local/lib/mjpg-streamer/input_uvc.so -n -f 10 -r 1280x720" -o "/usr/local/lib/mjpg-streamer/output_http.so -p 8085 -w /usr/local/share/mjpg-streamer/www"
 ```
-
 
