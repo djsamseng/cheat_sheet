@@ -1,5 +1,10 @@
 # Cheat Sheet
 
+#### Reset Ubuntu Audio - Reset PulseAudio
+```bash
+systemctl --user restart pulseaudio
+```
+
 #### grep recursively for text in folder
 ```bash
 ./grep_for_text.sh "text to find" /path/to/folder --include=\*.{cpp,h}
