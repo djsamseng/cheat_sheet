@@ -51,19 +51,33 @@ pip3 install -r requirements.txt
 - Install pytorch for cuda 11.3 (or as oppropriate) from [pytorch.org](https://pytorch.org/)
 
 ## Firewall
+### Installation
 - Uses iptables-persistent
 - Block all internet traffic from your user account and allow traffic from allow-network
 ```bash
 sudo iptables -I OUTPUT 1 -m owner --gid-owner $USER -j DROP
 sudo addgroup allow-network
-sudo adduser $USER allow-network
 ```
+- Set a password in order to use allow-network
 ```bash
-sg allow-network firefox
+sudo gpasswd allow-network
+```
+- OR add a user to always to be able to use allow-network without a password
+```bash
+sudo adduser $USER allow-network
 ```
 
 Save the updated rules for next reboot
 ```bash
 sudo su -c 'iptables-save > /etc/iptables/rules.v4'
 sudo su -c 'ip6tables-save > /etc/iptables/rules.v6'
+```
+
+### Accessing the internet
+```bash
+sg allow-network firefox
+```
+
+```bash
+sg allow-network "git push origin main"
 ```
