@@ -32,9 +32,12 @@ export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 export CUDA_HOME=/usr/local/cuda-11.4
 ```
+### OpenMPI
+[CudaAwareMPINumba](https://github.com/djsamseng/CudaAwareMPINumba)
 
 ## Applications
 - VSCode
+- Node and npm [Instructions using recommended nvm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## Packages
 ```bash
@@ -46,3 +49,21 @@ xargs -a packages.txt sudo apt-get install -y
 pip3 install -r requirements.txt
 ```
 - Install pytorch for cuda 11.3 (or as oppropriate) from [pytorch.org](https://pytorch.org/)
+
+## Firewall
+- Uses iptables-persistent
+- Block all internet traffic from your user account and allow traffic from allow-network
+```bash
+sudo iptables -I OUTPUT 1 -m owner --gid-owner $USER -j DROP
+sudo addgroup allow-network
+sudo adduser $USER allow-network
+```
+```bash
+sg allow-network firefox
+```
+
+Save the updated rules for next reboot
+```bash
+sudo su -c 'iptables-save > /etc/iptables/rules.v4'
+sudo su -c 'ip6tables-save > /etc/iptables/rules.v6'
+```

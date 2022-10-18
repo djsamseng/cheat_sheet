@@ -1,4 +1,7 @@
 
 opencv-python
+matplotlib
+mpi4py
+numba
 numpy
 pyaudio
