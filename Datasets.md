@@ -2,17 +2,35 @@
 
 
 ## Datasets
-1. Aidacalc - labeled pictures of math equations
-2. ami - audio recordings of meetings
-3. cmudict artic - voice recordings with sentence labels
-4. commonsense dialogues - json of conversations (4-6 turns between speakers)
-5. commonvoice - speach transcriptions
-6. crohme - handwritten mathematical equations in 
-7. Speech commands - individual words
-8. timit - audio transcription with labels at the sentence, word and phenome level
-9. ImageNet
-10. Flicker8k
-11. landlord handwritten name recognition
+
+### Vision
+- Aidacalc: labeled pictures of math equations
+- crohme: handwritten mathematical equations
+- ImageNet
+- Flicker8k
+- landlord handwritten name recognition
+- [Street View Text](http://www.iapr-tc11.org/mediawiki/index.php?title=The_Street_View_Text_Dataset)
+  - Text with bounding boxes from real images. Dictionary given so other words in the image can be parsed out
+- [IAM handwriting](http://www.iapr-tc11.org/mediawiki/index.php?title=IAM_Online_Document_Database_(IAMonDo-database))
+  - Motion of hand writing. Sample point is position, timestamp, pressure value of pen
+
+### Audio
+- ami: audio recordings of meetings
+- cmudict artic voice: recordings with sentence labels
+- commonvoice: speach transcriptions
+- Speech commands: individual words
+- timit: audio transcription with labels at the sentence, word and phenome level
+- [CallHome talkbank](https://www.linguistics.ucsb.edu/research/santa-barbara-corpus#SBC009): audio transcriptions of phone calls mid conversation. utterance level labels/timing for audio
+
+### Text
+- commonsense dialogues json of conversations (4-6 turns between speakers)
+- ConvoKit
+  - persuasionforgood-corpus: Introduction hello, how are you?
+  - tennis-corpus: Reporter jumps right into conversation. Each question/answer is a conversation and they go in order
+  - iq2-corpus: Full on debate with speaker introductions
+  - friends-corpus: Jumps in mid conversation
+  - gap-corpus: Mid conversation talking about 15 most important items in a hypothetical plane crash. $=laughter
+  - casino-corpus: Introduction hello, how are you? Campsight neighbors negotiate for food water firewood etc
 
 ## Reference
 1. WordNet - how do words relate to each other in terms of hierarchy
