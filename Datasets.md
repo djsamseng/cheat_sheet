@@ -13,6 +13,11 @@
   - Text with bounding boxes from real images. Dictionary given so other words in the image can be parsed out
 - [IAM handwriting](http://www.iapr-tc11.org/mediawiki/index.php?title=IAM_Online_Document_Database_(IAMonDo-database))
   - Motion of hand writing. Sample point is position, timestamp, pressure value of pen
+- [NEOCR: Natural Environment OCR Dataset](http://www.iapr-tc11.org/mediawiki/index.php?title=NEOCR:_Natural_Environment_OCR_Dataset)
+- [KAIST Scene Text](http://www.iapr-tc11.org/mediawiki/index.php?title=NEOCR:_Natural_Environment_OCR_Dataset)
+- [MSRA Text Detection](http://www.iapr-tc11.org/mediawiki/index.php?title=MSRA_Text_Detection_500_Database_(MSRA-TD500)) with bounding boxes
+- [Stanford OCR](https://ai.stanford.edu/~btaskar/ocr/) clean subset of words and images in a csv file with the pixel values
+- [Chars74k](http://www.ee.surrey.ac.uk/CVSSP/demos/chars74k/) Each character is its own image. Masks for character location also provided
 
 ### Audio
 - ami: audio recordings of meetings
