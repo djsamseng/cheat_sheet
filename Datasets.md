@@ -18,6 +18,9 @@
 - [MSRA Text Detection](http://www.iapr-tc11.org/mediawiki/index.php?title=MSRA_Text_Detection_500_Database_(MSRA-TD500)) with bounding boxes
 - [Stanford OCR](https://ai.stanford.edu/~btaskar/ocr/) clean subset of words and images in a csv file with the pixel values
 - [Chars74k](http://www.ee.surrey.ac.uk/CVSSP/demos/chars74k/) Each character is its own image. Masks for character location also provided
+- [COCO](https://cocodataset.org/#download) Images with masks of objects to idenity
+- [EMNIST](https://pytorch.org/vision/stable/generated/torchvision.datasets.EMNIST.html#torchvision.datasets.EMNIST) Handwritten letters (not just digits)
+- EgoBody Motion of interacting people from head-mounted devices
 
 ### Audio
 - ami: audio recordings of meetings
@@ -36,6 +39,7 @@
   - friends-corpus: Jumps in mid conversation
   - gap-corpus: Mid conversation talking about 15 most important items in a hypothetical plane crash. $=laughter
   - casino-corpus: Introduction hello, how are you? Campsight neighbors negotiate for food water firewood etc
+- [Project Gutenberg plain text books](https://www.gutenberg.org/ebooks/2641) [Plain text](https://www.gutenberg.org/cache/epub/2641/pg2641.txt)
 
 ## Reference
 1. WordNet - how do words relate to each other in terms of hierarchy
