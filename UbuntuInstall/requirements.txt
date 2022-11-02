@@ -1,5 +1,6 @@
 
 convokit
+librosa
 opencv-python
 matplotlib
 mpi4py

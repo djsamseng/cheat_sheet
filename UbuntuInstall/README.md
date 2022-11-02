@@ -81,3 +81,7 @@ sg allow-network firefox
 ```bash
 sg allow-network "git push origin main"
 ```
+
+```bash
+sudo iptables -I OUTPUT 1 -m owner --gid-owner samuel -j ACCEPT
+```

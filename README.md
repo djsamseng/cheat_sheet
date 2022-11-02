@@ -5,6 +5,11 @@
 systemctl --user restart pulseaudio
 ```
 
+#### Center Audio
+```bash
+sox test.wav out.wav highpass 10
+```
+
 #### grep recursively for text in folder
 ```bash
 ./grep_for_text.sh "text to find" /path/to/folder --include=\*.{cpp,h}
