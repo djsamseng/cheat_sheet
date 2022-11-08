@@ -44,3 +44,9 @@
 ## Reference
 1. WordNet - how do words relate to each other in terms of hierarchy
 2. ConceptNet - how do words relate to each other in terms of usage (ex: A person can make coffee)
+
+## Models
+### Audio
+- [NeMo](https://nvidia.github.io/NeMo/) ASR, NLP, TTS
+- [Flowtron](https://github.com/NVIDIA/flowtron) text to melspectrogram fed into [WaveGlow](https://github.com/NVIDIA/waveglow) for waveform sythnesis
+- [One TTS alignment to rule them all](https://nv-adlr.github.io/one-tts-alignment) for NeMo and Flowtron
