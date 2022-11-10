@@ -8,4 +8,5 @@ pavucontrol
 pip
 python3.8
 python3-pyaudio
+libespeak-ng1
 vim

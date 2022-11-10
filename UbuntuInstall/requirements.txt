@@ -7,3 +7,4 @@ mpi4py
 numba
 numpy
 pyaudio
+mycroft-mimic3-tts
