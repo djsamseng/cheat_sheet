@@ -19,6 +19,6 @@ result=$(grep -Ril "$text" "$location" \
   --exclude-dir=.data --exclude-dir=.git --exclude-dir=data --exclude-dir=include \
   --exclude-dir=__pycache__ --exclude-dir=.cache --exclude-dir=docs \
   --exclude-dir=share --exclude-dir=odas --exclude-dir=dependencies \
-  --exclude-dir=assets)
+  --exclude-dir=assets -I)
 
 echo "$result"
