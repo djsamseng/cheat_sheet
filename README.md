@@ -5,6 +5,17 @@
 systemctl --user restart pulseaudio
 ```
 
+#### Record Audio
+```bash
+sox -d rec.wav
+```
+
+#### Play Audio
+```bash
+aplay rec.wav # Linux
+afplay rec.wav # MacOS
+```
+
 #### Center Audio
 ```bash
 sox test.wav out.wav highpass 10
