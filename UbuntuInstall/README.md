@@ -19,7 +19,7 @@
 
 ### Nvidia Drivers
 [Fix Nvidia Drivers Script](git@github.com:djsamseng/fix_nvidia_drivers.git)
-###
+
 ### CUDA
 - Install using the debian installer (local)
 - [Installation](https://developer.nvidia.com/cuda-11-4-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local)
@@ -38,6 +38,13 @@ export CUDA_HOME=/usr/local/cuda-11.4
 ## Applications
 - VSCode
 - Node and npm [Instructions using recommended nvm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- Git
+```bash
+git config --global core.editor vim
+```
+```bash
+alias vi=vim # in .bashrc
+```
 
 ## Packages
 ```bash
