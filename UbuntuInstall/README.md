@@ -37,6 +37,24 @@ export CUDA_HOME=/usr/local/cuda-11.4
 
 ## Applications
 - VSCode
+  - pylint extension
+  - settings.json
+  ```json
+  {
+    "workbench.colorTheme": "Default Dark+",
+    "python.analysis.autoImportCompletions": false,
+    "python.analysis.typeCheckingMode": "strict",
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "python.linting.pylintArgs": [
+        "--disable=C0111", // minimum public class methods
+        "--disable=R0903",
+        "--indent-string=\"  \"",
+        "--disable=C0103", // naming
+        "--disable=R1728", // consider generator
+    ]
+  }
+  ```
 - Node and npm [Instructions using recommended nvm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - Git
 ```bash
