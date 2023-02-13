@@ -40,6 +40,8 @@
   - gap-corpus: Mid conversation talking about 15 most important items in a hypothetical plane crash. $=laughter
   - casino-corpus: Introduction hello, how are you? Campsight neighbors negotiate for food water firewood etc
 - [Project Gutenberg plain text books](https://www.gutenberg.org/ebooks/2641) [Plain text](https://www.gutenberg.org/cache/epub/2641/pg2641.txt)
+- [OpenWebText replication of OpenAI's WebText](https://openwebtext2.readthedocs.io/en/latest/)
+  - [nanoGPT reproducting gpt-2](https://github.com/karpathy/nanoGPT#reproducing-gpt-2)
 
 ## Reference
 1. WordNet - how do words relate to each other in terms of hierarchy
