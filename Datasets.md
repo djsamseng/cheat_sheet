@@ -42,7 +42,8 @@
 - [Project Gutenberg plain text books](https://www.gutenberg.org/ebooks/2641) [Plain text](https://www.gutenberg.org/cache/epub/2641/pg2641.txt)
 - [OpenWebText replication of OpenAI's WebText](https://openwebtext2.readthedocs.io/en/latest/)
   - [nanoGPT reproducting gpt-2](https://github.com/karpathy/nanoGPT#reproducing-gpt-2)
-
+- [HotpotQA](https://hotpotqa.github.io/) chain of thought question and answer using search engine
+  - ReAct combines chain of thought with actions
 ## Reference
 1. WordNet - how do words relate to each other in terms of hierarchy
 2. ConceptNet - how do words relate to each other in terms of usage (ex: A person can make coffee)
