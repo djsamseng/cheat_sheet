@@ -24,6 +24,7 @@
 - Install using the debian installer (local)
 - [Installation](https://developer.nvidia.com/cuda-11-4-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local)
    - [More detailed installation Instructions](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html#ubuntu-x86_64-deb)
+   - Now needs to install 11-6. I was able to install 11-4 (fails) and then 11-6 and 11-4 remained so I can still use my 11-4 cuda path [download link](https://developer.nvidia.com/cuda-11-6-2-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local)
 - Update path
   - note these will already be set in ~/.bashrc if you copy [.bashrc](https://github.com/djsamseng/cheat_sheet/blob/main/.bashrc)
   - note you will have to replace cuda-11.4 with the version of cuda you installed
