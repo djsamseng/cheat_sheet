@@ -44,6 +44,8 @@
   - [nanoGPT reproducting gpt-2](https://github.com/karpathy/nanoGPT#reproducing-gpt-2)
 - [HotpotQA](https://hotpotqa.github.io/) chain of thought question and answer using search engine
   - ReAct combines chain of thought with actions
+- [OpenAssistant](https://huggingface.co/datasets/OpenAssistant/oasst1) ChatGPT replacement
+
 ## Reference
 1. WordNet - how do words relate to each other in terms of hierarchy
 2. ConceptNet - how do words relate to each other in terms of usage (ex: A person can make coffee)
