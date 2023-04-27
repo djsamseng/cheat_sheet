@@ -1,4 +1,7 @@
 {
   "reportUnusedVariable": "warning",
-  "reportUnusedImport": "none"
+  "reportUnusedImport": "none",
+  "reportUntypedFunctionDecorator": "none",
+  "reportUnknownMemberType": "none",
+  "reportMissingTypeStubs": "none"
 }

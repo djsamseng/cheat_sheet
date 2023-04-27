@@ -115,3 +115,11 @@ Host github.com-SOMEWHERE github account
 ```bash
 git remote add origin git@github.com-SOMEWHERE:account_name/repo_name.git
 ```
+
+### Reindent VSCode
+1. Indent Using Tabs
+  1. Select the current tab size (ex: 4 if converting from 4 to 2)
+2. Convert Indentation to Tabs
+3. Indent Using Tabs
+  1. Select the desired tab size (ex: 2 if converting from 4 to 2)
+4. Convert Indentation to Spaces
