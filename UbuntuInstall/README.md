@@ -16,6 +16,10 @@
   - Mount point "/" since we'll use only one mount point for everything [Explanation](https://askubuntu.com/questions/21719/how-large-should-i-make-root-home-and-swap-partitions). Note the amount of space you are using
   - Scroll down and select the partition you just made (ex: "/dev/nvme0n1p5") which you can find by the amount of space you chose in the previous step
 
+### Accidental apt autoremove
+- using `apt-get install autoremove` removes a lot of packages I don't want to remove including cuda drivers
+- [See link to getting what was removed and to reinstall](https://askubuntu.com/a/738986)
+- [See restore file used](UbuntuInstall/restore)
 
 ### Nvidia Drivers
 [Fix Nvidia Drivers Script](git@github.com:djsamseng/fix_nvidia_drivers.git)
