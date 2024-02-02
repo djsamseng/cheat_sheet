@@ -118,34 +118,38 @@ fi
 
 alias vi=vim
 alias grep_for_text.sh=~/dev/cheat_sheet/grep_for_text.sh
+alias sgp=~/dev/cheat_sheet/sgp.sh
 alias myplay="ffplay -nodisp -hide_banner -autoexit"
 
 export PATH="/home/samuel/.local/bin:$PATH"
 
 # CUDA
-export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-export CUDA_HOME=/usr/local/cuda-11.4
+#export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}
+#export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+#export CUDA_HOME=/usr/local/cuda-11.4
+# OPENMPI
+#export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+# MUJOCO-PY
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/samuel/.mujoco/mujoco210/bin
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
+# export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so # Beware this can cause crashes
+
+# CUDA 12.2
+export PATH=/usr/local/cuda-12.2/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export CUDA_HOME=/usr/local/cuda-12.2
 # OPENMPI
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 # MUJOCO-PY
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/samuel/.mujoco/mujoco210/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
-export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so # Beware this can cause crashes
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/samuel/.mujoco/mujoco210/bin
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
+# export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so # Beware this can cause crashes
 
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/samuel/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/samuel/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/samuel/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/samuel/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export EOD_ROBOT_WS_PATH=/home/samuel/dev/eod-robot-ws
 
