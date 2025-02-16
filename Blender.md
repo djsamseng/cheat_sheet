@@ -4,3 +4,9 @@
   - Edit > Preferences > System
     - Select OptiX and then select your GPU
   
+## Shortcuts
+- Middle mouse to rotate around
+- Ctrl + Middle mouse to pan
+- G to move selected object
+- N to bring up details pain
+- Shift + A to add
