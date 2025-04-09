@@ -46,6 +46,7 @@
   - ReAct combines chain of thought with actions
 - [OpenAssistant](https://huggingface.co/datasets/OpenAssistant/oasst1) ChatGPT replacement
 - [https://github.com/czyssrs/FinQA](https://github.com/czyssrs/FinQA) Financial question and answer dataset from hired financial experts on company filings
+- [https://huggingface.co/datasets/next-tat/TAT-QA/viewer/default/test](https://huggingface.co/datasets/next-tat/TAT-QA/viewer/default/test) Financial question and answer based on tables created by human financial experts
 
 ## Reference
 1. WordNet - how do words relate to each other in terms of hierarchy
