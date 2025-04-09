@@ -45,6 +45,7 @@
 - [HotpotQA](https://hotpotqa.github.io/) chain of thought question and answer using search engine
   - ReAct combines chain of thought with actions
 - [OpenAssistant](https://huggingface.co/datasets/OpenAssistant/oasst1) ChatGPT replacement
+- [https://github.com/czyssrs/FinQA](https://github.com/czyssrs/FinQA) Financial question and answer dataset from hired financial experts on company filings
 
 ## Reference
 1. WordNet - how do words relate to each other in terms of hierarchy
