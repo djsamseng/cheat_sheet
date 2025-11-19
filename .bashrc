@@ -121,6 +121,10 @@ alias grep_for_text.sh=~/dev/cheat_sheet/grep_for_text.sh
 alias sgp=~/dev/cheat_sheet/sgp.sh
 alias myplay="ffplay -nodisp -hide_banner -autoexit"
 
+# uv venv python
+# uv pip install numpy
+source ~/dev/.venv/bin/activate
+
 export PATH="/home/samuel/.local/bin:$PATH"
 
 # CUDA
