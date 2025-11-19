@@ -1,5 +1,20 @@
 # Cheat Sheet
 
+#### Ubuntu Boots Without Wifi Card Being Detected
+- After an ubuntu software update, the wifi card may not be detected. This may fix it without needing any wifi
+```bash
+dpkg -l 'linux-generic*'
+# Desired=Unknown/Install/Remove/Purge/Hold
+# | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+# |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+# ||/ Name                    Version              Architecture Description
+# +++-=======================-====================-============-=========================================
+# ii  linux-generic-hwe-24.04 6.14.0-35.35~24.04.1 amd64        Complete Generic Linux kernel and headers
+
+sudo apt install --reinstall linux-generic-hwe-24.04
+sudo reboot -h now
+```
+
 #### Reset Ubuntu Audio - Reset PulseAudio
 ```bash
 systemctl --user restart pulseaudio
