@@ -118,15 +118,23 @@ fi
 
 alias vi=vim
 alias grep_for_text.sh=~/dev/cheat_sheet/grep_for_text.sh
-alias sgp=~/dev/cheat_sheet/sgp.sh
 alias myplay="ffplay -nodisp -hide_banner -autoexit"
 
-# uv venv python
-# uv pip install numpy
-source ~/dev/.venv/bin/activate
+# CUDA
+export CUDA_HOME=/usr/local/cuda
+export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+alias nvcc=/usr/local/cuda/bin/nvcc
+# OPENMPI
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
-export PATH="/home/samuel/.local/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
+
+
+# === UNUSED ===
 # CUDA
 #export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}
 #export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
@@ -138,22 +146,5 @@ export PATH="/home/samuel/.local/bin:$PATH"
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
 # export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so # Beware this can cause crashes
 
-# CUDA 12.2
-export PATH=/usr/local/cuda-12.2/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-export CUDA_HOME=/usr/local/cuda-12.2
-# OPENMPI
-export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
-# MUJOCO-PY
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/samuel/.mujoco/mujoco210/bin
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
-# export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so # Beware this can cause crashes
 
-
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export EOD_ROBOT_WS_PATH=/home/samuel/dev/eod-robot-ws
 
