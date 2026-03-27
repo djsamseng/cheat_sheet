@@ -14,12 +14,9 @@ location=$2
 shift
 shift
 
-result=$(grep -Ri "$text" "$location" \
+# sudo apt-get install ripgrep
+result=$(rg -iIH "$text" "$location" \
   $@ \
-  --exclude-dir=node_modules --exclude-dir=build --exclude-dir=env --exclude-dir=lib \
-  --exclude-dir=.data --exclude-dir=.git --exclude-dir=data --exclude-dir=include \
-  --exclude-dir=__pycache__ --exclude-dir=.cache --exclude-dir=docs \
-  --exclude-dir=share --exclude-dir=odas --exclude-dir=dependencies \
-  --exclude-dir=assets -I)
-
+  -g '!{node_modules,build,env,lib,.data,.git,data,include,__pycache__,.cache,share,odas,dependencies,.env,lib64,site-packages,flutter}/' -g '!{*.lock}' | cut -c1-160)
+  
 echo "$result"
