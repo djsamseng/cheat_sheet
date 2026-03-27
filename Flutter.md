@@ -56,6 +56,30 @@ class Game extends ChangeNotifier {
   }
 }
 
+class GamePageStateless extends StatelessWidget {
+  const GamePageStateless({
+    super.key,
+    required this.game
+  })
+  final Game game
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(listenable: this.game, builder: (context, child) {
+      return Column(
+        children: [
+          for (var guess in this.game.guesses)
+            Text(guess),
+          TextButton(onPressed: () {
+            this.game.add("New")
+          })
+        ]
+      )
+    })
+  }
+}
+
+// Immutable
 class GamePage extends StatefulWidget {
   GamePage({super.key});
 
@@ -63,24 +87,27 @@ class GamePage extends StatefulWidget {
   State<GamePage> createState() => _GamePageState();
 }
 
+// Mutable
 class _GamePageState extends State<GamePage> {
-  final Game _game = Game();
+  final List<String> guesses = [];
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        for (var guess in _game.guesses)
+        for (var guess in guesses)
           Text(guess),
         TextButton(onPressed: () {
           setState(() {
-            _game.add("New")
+            guesses.add("New")
           })
         })
       ]
     )
   }
 }
+
+
 ```
 
 - Expanded:
