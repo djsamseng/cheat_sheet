@@ -1,4 +1,10 @@
 
+- `vi ~/.android/avd/Medium_Phone.avd/config.ini`
+```bash
+hw.gpu.enabled=yes
+hw.gpu.mode=auto # host to force GPU
+```
+
 ```dart
 class MyWidget extends StatelessWidget {
   const MyWidget({ super.key })
