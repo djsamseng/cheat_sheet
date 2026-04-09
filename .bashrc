@@ -118,6 +118,7 @@ fi
 
 alias vi=vim
 alias grep_for_text.sh=~/dev/cheat_sheet/grep_for_text.sh
+alias uvfind.sh=~/dev/cheat_sheet/uvfind.sh
 alias myplay="ffplay -nodisp -hide_banner -autoexit"
 
 # CUDA

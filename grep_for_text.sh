@@ -2,8 +2,7 @@
 
 if [ $# -eq 0 ]
 then
-  echo "Usage: ./grep_for_text.sh \"text to find\" /path/to/folder --include=\*.{cpp,h}"
-  echo "-l print only names of FILEs with selected lines"
+  echo "Usage: ./grep_for_text.sh \"text to find\" /path/to/folder -g *.cpp -g *.h"
   exit
 fi
 
