@@ -10,3 +10,19 @@ export CUDA_HOME=/usr/local/cuda
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 alias nvcc=/usr/local/cuda/bin/nvcc
 ```
+
+### Purge old cuda installation
+```bash
+sudo apt-get purge "*nvidia*" "*cuda*" "*libcuda*"
+sudo apt-get autoremove
+sudo apt-get autoclean
+
+sudo rm -rf /usr/local/cuda*
+```
+
+Reinstall with cuda
+```bash
+sudo apt update
+ubuntu-drivers devices
+sudo apt-get install -y nvidia-open # Or follow cuda toolkit installation
+```
